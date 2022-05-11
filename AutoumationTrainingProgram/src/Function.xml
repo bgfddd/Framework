@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Adhoc" parallel="tests" thread-count="6">
+
+<test name="Regression">
+<parameter name="browsers" value="Chrome"></parameter>
+<classes>
+<class name="piit.AutoumationTrainingProgram.Browsersd"></class>
+<class name="piit.AutoumationTrainingProgram.Signout"></class>
+<class name="piit.AutoumationTrainingProgram.Execution"></class>
+</classes>
+</test>
+<test name="RegressionofFirefox">
+<parameter name="browsers" value="Firefox"></parameter>
+<classes>
+<class name="piit.AutoumationTrainingProgram.Browsersd"></class>
+<class name="piit.AutoumationTrainingProgram.Signout"></class>
+<class name="piit.AutoumationTrainingProgram.Execution"></class>
+</classes>
+</test>
+<test name="RegressionofEdge">
+<parameter name="browsers" value="Edge"></parameter>
+<classes>
+<class name="piit.AutoumationTrainingProgram.Browsersd"></class>
+<class name="piit.AutoumationTrainingProgram.Signout"></class>
+<class name="piit.AutoumationTrainingProgram.Execution"></class>
+</classes>
+</test>
+</suite>
