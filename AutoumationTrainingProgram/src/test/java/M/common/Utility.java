@@ -23,19 +23,20 @@ public class Utility {
  
   @BeforeClass
   public void beforeClass(String window) {
-	  
+	  String windows =System.getenv("user.dir");
+	  System.out.println(windows);
 	  if(window.equalsIgnoreCase("Chrome")) {
-		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\fwzna\\eclipse-workspace\\AutoumationTrainingProgram\\Drivers\\chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver", windows+"\\Drivers\\chromedriver.exe");
 		  driver=new ChromeDriver();
 		  driver.navigate().to("https://www.facebook.com");
 		  driver.manage().window().maximize();
 	  }else if(window.equalsIgnoreCase("Edge")) {
-		  System.setProperty("webdriver.edge.driver", "C:\\Users\\fwzna\\eclipse-workspace\\AutoumationTrainingProgram\\Drivers\\msedgedriver.exe");
+		  System.setProperty("webdriver.edge.driver", windows+"\\Drivers\\msedgedriver.exe");
 		  driver=new EdgeDriver();
 		  driver.navigate().to("https://www.facebook.com");
 		  driver.manage().window().maximize();
       }else if(window.equalsIgnoreCase("Firefox")) {
-	      System.setProperty("webdriver.gecko.driver", "C:\\Users\\fwzna\\eclipse-workspace\\AutoumationTrainingProgram\\Drivers\\geckodriver.exe");
+	      System.setProperty("webdriver.gecko.driver", windows+"\\Drivers\\geckodriver.exe");
 	      driver=new FirefoxDriver();
 	      driver.navigate().to("https://www.facebook.com");
 		  driver.manage().window().maximize();
@@ -54,7 +55,8 @@ public class Utility {
 	     String sk=dt.toString().replace(" ", "_").replace(":", "_");
 	     System.out.println(sk);
 	     System.out.println(dt);
+	     String windows =System.getenv("user.dir");
 		 File screenshots= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		 FileHandler.copy(screenshots,new File("C:\\Users\\fwzna\\eclipse-workspace\\AutoumationTrainingProgram\\Pictures\\"+sk+"ShortOfPage.jpg"));
+		 FileHandler.copy(screenshots,new File(windows+"\\Pictures\\"+sk+"ShortOfPage.jpg"));
 }
 }
