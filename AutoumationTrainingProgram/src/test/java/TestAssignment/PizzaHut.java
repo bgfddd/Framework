@@ -29,6 +29,12 @@ public class PizzaHut extends Utility {
 	  
 	  
   }
+  
+  @Test (priority = 2, dependsOnMethods = "f")
+  public void TextVerificationMethod() throws InterruptedException {
+	  driver.navigate().back();
+	  Thread.sleep(6000);
+  }
  
 
 }
