@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestAssignment.HomeDepot">
+      <class name="TestAssignment.PizzaHut">
         <methods>
+          <include name="beforeClass"/>
+          <include name="TextVerificationMethod"/>
           <include name="f"/>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
         </methods>
-      </class> <!-- TestAssignment.HomeDepot -->
+      </class> <!-- TestAssignment.PizzaHut -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

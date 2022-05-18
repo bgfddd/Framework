@@ -10,18 +10,25 @@ public class Home {
 	@FindBy(name="email") WebElement Ids;
 	@FindBy(name="pass") WebElement Psswords;
 	@FindBy(linkText="Forgot password?") WebElement Forgot;
+	@FindBy(name="login") WebElement Loginbutton; 
 	
 	public Home(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void Email() {
-		Ids.sendKeys("John");
+	public void Email(String name) {
+		Ids.clear();
+		Ids.sendKeys(name);
 	}
-	public void PsswordsFieldsEnters() {
-		Psswords.sendKeys("Silver");
+	public void PsswordsFieldsEnters(String name) {
+		Psswords.sendKeys(name);
 	}
 	public void ForgotLinkClick() {
+		Forgot.clear();
 		Forgot.click();
+	}
+	
+	public void login() {
+		Loginbutton.click();
 	}
 }

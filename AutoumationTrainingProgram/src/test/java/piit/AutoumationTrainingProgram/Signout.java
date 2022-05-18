@@ -18,19 +18,20 @@ public class Signout extends Utility{
 	  Home ob =new Home(driver);
 	  ob.Email();
 	  Thread.sleep(6000);
-	//  Picctures();
+	  Picctures();
 	  ob.PsswordsFieldsEnters();
 	  Thread.sleep(6000);
-	//  Picctures();
+	  Picctures();
 	  ob.ForgotLinkClick();
 	  FrogotPasswordPage id=new FrogotPasswordPage(driver);
 	  id.IdsSendKeys();
 	  id.SearchButtonClick();
 	  Thread.sleep(6000); 
-     // Picctures(); 
+      Picctures(); 
 	  
 	
   }
+  
   
   @Test (priority = 2, dependsOnMethods = "f")
   public void TextVerificationMethod() throws InterruptedException {

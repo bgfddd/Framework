@@ -1,6 +1,7 @@
 package TestAssignment;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import Assignment.DeliveryPage;
 import Assignment.PizzaHutHomePage;
@@ -34,6 +35,12 @@ public class PizzaHut extends Utility {
   public void TextVerificationMethod() throws InterruptedException {
 	  driver.navigate().back();
 	  Thread.sleep(6000);
+	  DeliveryPage dv=new DeliveryPage(driver);
+	  String Textss =dv.TextOfDelivery();
+	  SoftAssert softit=new SoftAssert();
+	  softit.assertEquals("Find a store to get started",Textss );
+	  System.out.println("This is after my assertions");
+	  softit.assertAll();
   }
  
 

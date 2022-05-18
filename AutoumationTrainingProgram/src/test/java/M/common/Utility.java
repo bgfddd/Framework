@@ -19,11 +19,11 @@ import org.testng.annotations.AfterClass;
 
 public class Utility {
 	 public WebDriver driver;
-	 @Parameters({"browsers"})
+	 @Parameters({"browsers"}) 
  
   @BeforeClass
   public void beforeClass(String window) {
-	  String windows =System.getenv("user.dir");
+	  String windows =System.getProperty("user.dir");
 	  System.out.println(windows);
 	  if(window.equalsIgnoreCase("Chrome")) {
 		  System.setProperty("webdriver.chrome.driver", windows+"\\Drivers\\chromedriver.exe");

@@ -21,7 +21,7 @@ public class Browsersd extends Utility {
 	  pssword.sendKeys("Adan2018");
 	  WebElement log=driver.findElement(By.name("login"));
 	  log.click();
-	  Thread.sleep(6000);
+	  Thread.sleep(6000); 
   }  
   
 

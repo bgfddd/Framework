@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class DeliveryPage {
 
 	WebDriver driver;
-
+	
 	@FindBy(xpath="html/body/app-root/div/div/div/div/div/div/div/div/div/div/div/div/label") WebElement Delivery;
 	@FindBy(id="syo-address1") WebElement Address ;
 	@FindBy(name="deliveryApt") WebElement Apt ;
@@ -16,7 +16,7 @@ public class DeliveryPage {
 	@FindBy(xpath="//*[@id=\"state\"]/option[47]") WebElement  State;
 	@FindBy(id="zip-input") WebElement  Zip;
 	@FindBy(id="ph-find-store") WebElement FindAStore;
-	
+	@FindBy(xpath = "(//h1[text()='Find a store to get started'])[1]") WebElement Texts;
 	
 	public DeliveryPage(WebDriver driver) {
 		this.driver=driver;
@@ -48,6 +48,10 @@ public class DeliveryPage {
 	
 	public void   FindAStore() {
 		FindAStore.click(); 
+	}
+	public String TextOfDelivery() {
+		String Textss=Texts.getText();
+		return Textss;
 	}
 	
 }
