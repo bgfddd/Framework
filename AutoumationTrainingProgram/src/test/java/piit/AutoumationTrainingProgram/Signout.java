@@ -16,10 +16,10 @@ public class Signout extends Utility{
   @Test (priority = 1)
   public void f() throws InterruptedException, IOException{
 	  Home ob =new Home(driver);
-	  ob.Email();
+	  ob.Email("");
 	  Thread.sleep(6000);
 	  Picctures();
-	  ob.PsswordsFieldsEnters();
+	  ob.PsswordsFieldsEnters("");
 	  Thread.sleep(6000);
 	  Picctures();
 	  ob.ForgotLinkClick();

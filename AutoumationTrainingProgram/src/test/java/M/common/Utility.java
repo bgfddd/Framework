@@ -55,7 +55,7 @@ public class Utility {
 	     String sk=dt.toString().replace(" ", "_").replace(":", "_");
 	     System.out.println(sk);
 	     System.out.println(dt);
-	     String windows =System.getenv("user.dir");
+	     String windows =System.getProperty("user.dir"); 
 		 File screenshots= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		 FileHandler.copy(screenshots,new File(windows+"\\Pictures\\"+sk+"ShortOfPage.jpg"));
 }

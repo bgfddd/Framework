@@ -7,8 +7,8 @@
 <test name="Regression">
 <parameter name="browsers" value="Chrome"></parameter>
 <classes>
-<class name="piit.AutoumationTrainingProgram.NewTest"></class>
-<!--  <class name="piit.AutoumationTrainingProgram.Browsersd"></class>
+  <class name="piit.AutoumationTrainingProgram.NewTest"></class>  
+ <!--  <class name="piit.AutoumationTrainingProgram.Browsersd"></class>
 <class name="piit.AutoumationTrainingProgram.Signout"></class>
 <class name="piit.AutoumationTrainingProgram.Execution"></class> 
 </classes>
@@ -16,7 +16,7 @@
 <test name="RegressionofFirefox">
 <parameter name="browsers" value="Firefox"></parameter>
 <classes>
-<class name="piit.AutoumationTrainingProgram.NewTest"></class>
+  <class name="piit.AutoumationTrainingProgram.NewTest"></class>  
   <class name="piit.AutoumationTrainingProgram.Browsersd"></class>
 <class name="piit.AutoumationTrainingProgram.Signout"></class>
 <class name="piit.AutoumationTrainingProgram.Execution"></class>  
@@ -25,10 +25,10 @@
 <test name="RegressionofEdge">
 <parameter name="browsers" value="Edge"></parameter>
 <classes>
-<class name="piit.AutoumationTrainingProgram.NewTest"></class>
+  <class name="piit.AutoumationTrainingProgram.NewTest"></class> 
   <class name="piit.AutoumationTrainingProgram.Browsersd"></class>
 <class name="piit.AutoumationTrainingProgram.Signout"></class>
-<class name="piit.AutoumationTrainingProgram.Execution"></class>  -->
+<class name="piit.AutoumationTrainingProgram.Execution"></class>   -->
 </classes>
 </test>
 </suite>

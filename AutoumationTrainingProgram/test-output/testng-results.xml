@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-18T14:01:28 CDT" name="Adhoc" finished-at="2022-05-18T14:02:34 CDT" duration-ms="65441">
+  <suite started-at="2022-05-21T13:20:31 CDT" name="Adhoc" finished-at="2022-05-21T13:21:39 CDT" duration-ms="68135">
     <groups>
     </groups>
-    <test started-at="2022-05-18T14:01:28 CDT" name="Regression" finished-at="2022-05-18T14:02:34 CDT" duration-ms="65441">
+    <test started-at="2022-05-21T13:20:31 CDT" name="Regression" finished-at="2022-05-21T13:21:39 CDT" duration-ms="68135">
       <class name="piit.AutoumationTrainingProgram.NewTest">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:piit.AutoumationTrainingProgram.NewTest@4c398c80]" started-at="2022-05-18T14:01:28 CDT" name="beforeClass" finished-at="2022-05-18T14:01:31 CDT" duration-ms="3103" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:piit.AutoumationTrainingProgram.NewTest@791f145a]" started-at="2022-05-21T13:20:31 CDT" name="beforeClass" finished-at="2022-05-21T13:20:35 CDT" duration-ms="3876" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:piit.AutoumationTrainingProgram.NewTest@4c398c80]" started-at="2022-05-18T14:01:31 CDT" name="f" data-provider="Providers" finished-at="2022-05-18T14:01:54 CDT" duration-ms="22101" status="PASS">
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:piit.AutoumationTrainingProgram.NewTest@791f145a]" started-at="2022-05-21T13:20:35 CDT" name="f" data-provider="Providers" finished-at="2022-05-21T13:20:59 CDT" duration-ms="24033" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:piit.AutoumationTrainingProgram.NewTest@4c398c80]" started-at="2022-05-18T14:01:54 CDT" name="f" data-provider="Providers" finished-at="2022-05-18T14:02:29 CDT" duration-ms="35792" status="PASS">
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:piit.AutoumationTrainingProgram.NewTest@791f145a]" started-at="2022-05-21T13:20:59 CDT" name="f" data-provider="Providers" finished-at="2022-05-21T13:21:35 CDT" duration-ms="35790" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -50,7 +50,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:piit.AutoumationTrainingProgram.NewTest@4c398c80]" started-at="2022-05-18T14:02:30 CDT" name="afterClass" finished-at="2022-05-18T14:02:34 CDT" duration-ms="4166" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:piit.AutoumationTrainingProgram.NewTest@791f145a]" started-at="2022-05-21T13:21:35 CDT" name="afterClass" finished-at="2022-05-21T13:21:39 CDT" duration-ms="4154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
